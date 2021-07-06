@@ -1,0 +1,30 @@
+<html>
+    <style>
+      #clicker-1 { position: absolute; }
+    </style>
+  <body>
+
+    <button id="clicker-1">Can't click me!</button> <span>Clicks: <span id="clicker-1-count">0</span></span>
+
+
+  </body>
+
+
+
+  <script>
+    // alert("Hai!");
+
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+    }
+
+
+    button1 = document.getElementById("clicker-1");
+    button1.onclick = function(){
+      button1.style.top = getRandomInt(1000);
+      button1.style.left = getRandomInt(1000);
+      // count = document.getElementById("clicker-1-count");
+      // count.innerText = Number(count.innerText) + 1;
+    }
+  </script>
+</html>

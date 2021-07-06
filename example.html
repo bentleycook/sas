@@ -1,0 +1,28 @@
+<html>
+
+  <body>
+
+    <button id="clicker-1">Click me!</button> <span>Clicks: <span id="clicker-1-count">0</span></span>
+
+<hr>
+
+    <button id="clicker-2">Click me!</button> <span>Clicks: <span id="clicker-2-count">0</span></span>
+
+<hr>
+
+<hr>
+
+  </body>
+
+
+
+  <script>
+    // alert("Hai!");
+
+    button1 = document.getElementById("clicker-1");
+    button1.onclick = function(){
+      count = document.getElementById("clicker-1-count");
+      count.innerText = Number(count.innerText) + 1;
+    }
+  </script>
+</html>
